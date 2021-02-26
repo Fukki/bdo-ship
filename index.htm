@@ -2,10 +2,28 @@
 <html>
 <head>
 <meta charset="utf-8">
+<!-- Primary Meta Tags -->
+<title>[BDO] ทดลองระเบิดเรือ v0.1</title>
+<meta name="title" content="[BDO] ทดลองระเบิดเรือ v0.1">
+<meta name="description" content="ทดสอบการตีบวกประดับเรือ">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://fukki.github.io/">
+<meta property="og:title" content="[BDO] ทดลองระเบิดเรือ v0.1">
+<meta property="og:description" content="ทดสอบการตีบวกประดับเรือ">
+<meta property="og:image" content="https://i.redd.it/m6tan4k7gpf61.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://fukki.github.io/">
+<meta property="twitter:title" content="[BDO] ทดลองระเบิดเรือ v0.1">
+<meta property="twitter:description" content="ทดสอบการตีบวกประดับเรือ">
+<meta property="twitter:image" content="https://i.redd.it/m6tan4k7gpf61.jpg">
 <title>ทดลองระเบิดเรือ v0.1</title>
 </head>
 
-<body>
+<body style="background-image: url('./imgs/setsuna.jpg');background-repeat: no-repeat;background-size: cover;background-position: 50% 0;left: 0;top: 0;opacity: 0.9;">
 <script>
 	var dice = 1;
 	var ship = 0;
@@ -15,7 +33,7 @@
 	var softcap = 0;
 	var attempt = 0;
 	var enchant = 0;
-	var data = '{"0":{"base": [30, 25, 20, 15, 12, 10, 5, 3, 2, 1],"refail":[10, 14, 15, 17, 20, 23, 32, 34, 40, 60]},"1":{"base":["70, 60, 50, 45, 40, 30, 25, 20, 15, 12"],"refail":[8, 9, 14, 15, 18, 19, 22, 25, 30, 25]},"2":{"base":[10, 9, 7, 5, 4, 2.5, 1.5, 1, 0.8, 0.5],"refail":[30, 32, 42, 47, 51, 52, 75, 85, 110, 120]}}';
+	var data = '{"0":{"base": [30, 25, 20, 15, 12, 10, 5, 3, 2, 1],"refail":[10, 14, 15, 17, 20, 23, 32, 34, 40, 60]},"1":{"base":[70, 60, 50, 45, 40, 30, 25, 20, 15, 12],"refail":[8, 9, 14, 15, 18, 19, 22, 25, 30, 25]},"2":{"base":[10, 9, 7, 5, 4, 2.5, 1.5, 1, 0.8, 0.5],"refail":[30, 32, 42, 47, 51, 52, 75, 85, 110, 120]}}';
 	data = JSON.parse(data);
 	function _Dice() {
 		let rand = [], roll = 0, sum = 0;
@@ -100,12 +118,12 @@
     </tr>
     <tr valign="top">
       <td><select name="dice" id="dice" style="width: 220px;" onchange="setdice(this.value);">
-        <option value="1">ดวงแบบมนุษย์ทั่วไป ลูกเต๋า1 ลูก</option>
-        <option value="2">ขัดดวงลูกเต๋า 2 ลูก</option>
-        <option value="4">ขัดดวงลูกเต๋า 4 ลูก</option>
-        <option value="6">ขัดดวงลูกเต๋า 6 ลูก</option>
-        <option value="8">ขัดดวงลูกเต๋า 8 ลูก</option>
-        <option value="10">ขัดดวงลูกเต๋า 10 ลูก</option>
+        <option value="1">ดวงแบบมนุษย์ทั่วไป ลูกเต๋า 1 ลูก</option>
+        <option value="2">เหนือมนุษย์ ขัดดวงลูกเต๋า 2 ลูก</option>
+        <option value="4">เหนือมนุษย์ ขัดดวงลูกเต๋า 4 ลูก</option>
+        <option value="6">เหนือมนุษย์ ขัดดวงลูกเต๋า 6 ลูก</option>
+        <option value="8">เหนือมนุษย์ ขัดดวงลูกเต๋า 8 ลูก</option>
+        <option value="10">เหนือมนุษย์ ขัดดวงลูกเต๋า 10 ลูก</option>
       </select></td>
     </tr>
     <tr valign="top">
